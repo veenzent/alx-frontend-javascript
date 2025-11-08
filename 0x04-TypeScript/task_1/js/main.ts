@@ -67,3 +67,33 @@ function printTeacher(firstName: string, lastName: string) {
 // example usage
 console.log(printTeacher("Vincent", "Odogwu")); // should print "V. Odogwu"
 
+
+// Task 4: Writing a Class
+// Interface describing the class itself
+interface StudentClassInterface {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+class StudentClass implements StudentClassInterface {
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    workOnHomework(): string {
+      return 'Currently working';
+    }
+
+    displayName(): string {
+      return this.firstName;
+    }
+  }
+
+// Example usage
+// const student = new StudentClass('Vincent', 'Odogwu');
+// console.log(student.displayName()); // Output: John
+// console.log(student.workOnHomework()); // Output: Currently working
