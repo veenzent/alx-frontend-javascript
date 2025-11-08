@@ -26,6 +26,7 @@ console.log(teacher3);
 // location: "London"
 
 
+//  Task 3
 // write an interface names Directors that extends Teacher
 interface Director extends Teacher {
     numberOfReports: number;
@@ -54,16 +55,10 @@ interface printTeacherFunction {
 }
 
 // Implement the printTeacher function
-const printTeacher: printTeacherFunction = function (firstName: string, lastName: string): string {
-  return `${firstName.charAt(0)}. ${lastName}`;
-};
-
-
-
-// function printTeacher(firstName: string, lastName: string) {
-//     // return `${firstName.charAt(0)}. ${lastName}`;
-//     return `${firstName}. ${lastName}`;
-// }
+function printTeacher(firstName: string, lastName: string) {
+    // return `${firstName.charAt(0)}. ${lastName}`;
+    return `${firstName}. ${lastName}`;
+}
 
 // const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
 //     return `${firstName.charAt(0)}. ${lastName}`;
