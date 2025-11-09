@@ -75,14 +75,24 @@ interface StudentClassInterface {
   displayName(): string;
 }
 
-class StudentClass implements StudentClassInterface {
-    firstName: string;
-    lastName: string;
+class StudentClass {
+  firstName: string;
+  lastName: string;
 
-    constructor(firstName: string, lastName: string) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+// }
+
+// class StudentClass implements StudentClassInterface {
+//     firstName: string;
+//     lastName: string;
+
+//     constructor(firstName: string, lastName: string) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//     }
 
     workOnHomework(): string {
       return 'Currently working';
