@@ -48,33 +48,6 @@ console.log(director1);
 // lastName: "Doe"
 // location: "London"
 
-
-// Define the interface for printTeacher function
-// interface printTeacherFunction {
-//     (firstName: string, lastName: string): string;
-// }
-
-// Implement the printTeacher function
-// function printTeacher(firstName: string, lastName: string) {
-//     // return `${firstName.charAt(0)}. ${lastName}`;
-//     return `${firstName}. ${lastName}`;
-// }
-
-// const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
-//     return `${firstName.charAt(0)}. ${lastName}`;
-// };
-
-// const printTeacher: printTeacherFunction = ({ firstName, lastName }) => {
-//   return `${firstName.charAt(0)}. ${lastName}`;
-// };
-
-// // example usage
-// console.log(printTeacher("Trevor", "Noah")); // should print "T. Noah"
-
-
-
-
-// new implementation
 // Define the interface for printTeacher function
 interface printTeacherFunction {
     (firstName: string, lastName: string): string;
@@ -91,7 +64,7 @@ function printTeacher(firstName: string, lastName: string) {
 // };
 
 // example usage
-console.log(printTeacher("Vincent", "Odogwu")); // should print "V. Odogwu"
+console.log(printTeacher("Colori", "Brentford")); // should print "C. Brentford"
 
 
 
