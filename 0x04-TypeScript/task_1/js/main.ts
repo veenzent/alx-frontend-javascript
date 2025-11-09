@@ -65,7 +65,7 @@ function printTeacher(firstName: string, lastName: string) {
 // };
 
 // example usage
-console.log(printTeacher("Vincent", "Odogwu")); // should print "V. Odogwu"
+console.log(printTeacher("Trevor", "Noah")); // should print "T. Noah"
 
 
 // Task 4: Writing a Class
