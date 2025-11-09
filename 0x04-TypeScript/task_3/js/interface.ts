@@ -1,6 +1,6 @@
-type ROWID = number;
+type RowID = number;
 
-interface ROWElement {
+interface RowElement {
     firstName: string;
     lastName: string;
     age?: number;

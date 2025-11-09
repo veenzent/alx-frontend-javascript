@@ -1,7 +1,9 @@
-import {ROWID, ROWElement} from './interface.js';
+import { RowID, RowElement } from "./interface.js";
 
+// Declare the functions that exist in crud.js
+declare function insertRow(row: RowElement): RowID;
+declare function deleteRow(rowId: RowID): void;
+declare function updateRow(rowId: RowID, row: RowElement): RowID;
 
-// Declare the function types for crud.js
-export function insertRow(row: RowElement): RowID;
-export function deleteRow(rowId: RowID): void;
-export function updateRow(rowId: RowID, row: RowElement): RowID;
+// Export them so they can be used elsewhere
+export { insertRow, deleteRow, updateRow };
