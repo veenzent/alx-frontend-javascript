@@ -25,7 +25,47 @@ console.log(teacher3);
 // lastName: "Doe"
 // location: "London"
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Task 3
+// write an interface names Directors that extends Teacher
+// interface Director extends Teacher {
+//     numberOfReports: number;
+// }
 
+// const director1: Director = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   location: 'London',
+//   fullTimeEmployee: true,
+//   numberOfReports: 17,
+// };
+// console.log(director1);
+
+// // should print
+// // Object
+// // firstName: "John"
+// // fullTimeEmployee: true
+// // lastName: "Doe"
+// // location: "London"
+
+// // Define the interface for printTeacher function
+// interface printTeacherFunction {
+//     (firstName: string, lastName: string): string;
+// }
+
+// // Implement the printTeacher function
+// function printTeacher(firstName: string, lastName: string) {
+//     // return `${firstName.charAt(0)}. ${lastName}`;
+//     return `${firstName}. ${lastName}`;
+// }
+
+// // const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+// //     return `${firstName.charAt(0)}. ${lastName}`;
+// // };
+
+// // example usage
+// console.log(printTeacher("Colori", "Brentford")); // should print "C. Brentford"
+/////////////////////////////////////////////////////////////////////////////////////////////////
 //  Task 3
 // write an interface names Directors that extends Teacher
 interface Director extends Teacher {
@@ -48,23 +88,24 @@ console.log(director1);
 // lastName: "Doe"
 // location: "London"
 
+
 // Define the interface for printTeacher function
 interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
 
-// // Implement the printTeacher function
-// function printTeacher(firstName: string, lastName: string) {
-//     // return `${firstName.charAt(0)}. ${lastName}`;
-//     return `${firstName}. ${lastName}`;
-// }
+// Implement the printTeacher function
+function printTeacher(firstName: string, lastName: string) {
+    // return `${firstName.charAt(0)}. ${lastName}`;
+    return `${firstName}. ${lastName}`;
+}
 
-const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
-    return `${firstName.charAt(0)}. ${lastName}`;
-};
+// const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+//     return `${firstName.charAt(0)}. ${lastName}`;
+// };
 
 // example usage
-console.log(printTeacher("Colori", "Brentford")); // should print "C. Brentford"
+console.log(printTeacher("Vincent", "Odogwu")); // should print "V. Odogwu"
 
 
 
@@ -77,6 +118,7 @@ console.log(printTeacher("Colori", "Brentford")); // should print "C. Brentford"
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // Task 4: Writing a Class
