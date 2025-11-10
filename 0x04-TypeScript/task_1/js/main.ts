@@ -48,24 +48,21 @@ console.log(director1);
 // lastName: "Doe"
 // location: "London"
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Define the interface for printTeacher function
 interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
 
 // Implement the printTeacher function
-// function printTeacher(
-//   firstName:string, 
-//   lastName:string) {
-//     // return `${firstName.charAt(0)}. ${lastName}`;
-//     return `${firstName}. ${lastName}`;
-// }
+function printTeacher(firstName:string, lastName:string) {
+    return `${firstName.charAt(0)}. ${lastName}`;
+    // return `${firstName}. ${lastName}`;
+}
 
-
-
-function printTeacher( firstName, lastName ){
-    return firstName.slice(0,1) + '.' +' '+ lastName
- }
+// function printTeacher( firstName, lastName ){
+//     return firstName.slice(0,1) + '.' +' '+ lastName
+//  }
 
 // const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
 //     return `${firstName.charAt(0)}. ${lastName}`;
@@ -73,7 +70,7 @@ function printTeacher( firstName, lastName ){
 
 // example usage
 console.log(printTeacher("Colori", "Brentford")); // should print "C. Brentford"
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
