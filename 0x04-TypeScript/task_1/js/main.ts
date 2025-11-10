@@ -54,7 +54,9 @@ interface printTeacherFunction {
 }
 
 // Implement the printTeacher function
-const printTeacher: printTeacherFunction = function(firstName: string, lastName: string) {
+function printTeacher(
+  firstName: string, 
+  lastName: string) {
     // return `${firstName.charAt(0)}. ${lastName}`;
     return `${firstName}. ${lastName}`;
 }
