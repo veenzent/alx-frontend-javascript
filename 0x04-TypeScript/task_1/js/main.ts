@@ -54,19 +54,18 @@ interface printTeacherFunction {
 }
 
 // Implement the printTeacher function
-function printTeacher(
-  firstName:string, 
-  lastName:string) {
-    // return `${firstName.charAt(0)}. ${lastName}`;
-    return `${firstName}. ${lastName}`;
-}
+// function printTeacher(
+//   firstName:string, 
+//   lastName:string) {
+//     // return `${firstName.charAt(0)}. ${lastName}`;
+//     return `${firstName}. ${lastName}`;
+// }
 
 
 
-// function printTeacher(firstName:string, lastName:string){
-//     return firstName.slice(0,1) + '.' +' '+ lastName // It returns the first letter of the firstName and the full lastName
-//  }
-//  console.log(printTeacher("John", "Doe")) 
+function printTeacher(firstName:string, lastName:string){
+    return firstName.slice(0,1) + '.' +' '+ lastName
+ }
 
 // const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
 //     return `${firstName.charAt(0)}. ${lastName}`;
