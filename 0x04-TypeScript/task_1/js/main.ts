@@ -63,7 +63,7 @@ interface printTeacherFunction {
 
 
 
-function printTeacher(firstName:string, lastName:string){
+function printTeacher( firstName, lastName ){
     return firstName.slice(0,1) + '.' +' '+ lastName
  }
 
