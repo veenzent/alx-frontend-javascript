@@ -53,15 +53,15 @@ interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
 
-// Implement the printTeacher function
-function printTeacher(firstName: string, lastName: string) {
-    // return `${firstName.charAt(0)}. ${lastName}`;
-    return `${firstName}. ${lastName}`;
-}
+// // Implement the printTeacher function
+// function printTeacher(firstName: string, lastName: string) {
+//     // return `${firstName.charAt(0)}. ${lastName}`;
+//     return `${firstName}. ${lastName}`;
+// }
 
-// const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
-//     return `${firstName.charAt(0)}. ${lastName}`;
-// };
+const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+    return `${firstName.charAt(0)}. ${lastName}`;
+};
 
 // example usage
 console.log(printTeacher("Colori", "Brentford")); // should print "C. Brentford"
